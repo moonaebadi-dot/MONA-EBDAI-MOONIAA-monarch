@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3fafb;
+  --color-foam: #e6f4f6;
+  --color-ink: #0c2e34;
+  --color-ink-soft: #184048;
+  --color-muted: #5c7479;
+  --color-line: #c5e0e4;
+  --color-brand: #54c5d0;
+  --color-brand-deep: #2b9aa5;
+  --color-accent: #eb7400;
+  --color-surface: #ffffff;
+  --color-mist: #b9dde1;
+
+  --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Vazirmatn", Georgia, "Times New Roman", serif;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  --tracking-eyebrow: 0.2em;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    line-height: 1.15;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-brand);
+    color: var(--color-ink);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-brand-deep);
+    outline-offset: 3px;
+  }
+}
+
+.scroll-progress {
+  transform-origin: left center;
+}
+
+[dir="rtl"] .scroll-progress {
+  transform-origin: right center;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.rise-in {
+  animation: rise-in 0.5s var(--ease-out-soft) both;
+}
+
+.rise-in-2 {
+  animation-delay: 80ms;
+}
+.rise-in-3 {
+  animation-delay: 160ms;
+}
+.rise-in-4 {
+  animation-delay: 240ms;
+}
+.rise-in-5 {
+  animation-delay: 320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rise-in,
+  .rise-in-2,
+  .rise-in-3,
+  .rise-in-4,
+  .rise-in-5 {
+    animation: none;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Mona Ebadi",
+      "hasCanvas": false,
+      "bodyTextLen": 4658,
+      "bodyTextHash": "7a160544a3699c1131e6e278cacc0081eb4095ac611f73f4b6c28b1143cae63d",
+      "bodyTextPrefix": "پرش به محتوا M مونا عبادی درباره کارها مسیر شغلی آموزش تماس EN م",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Mona Ebadi",
+      "hasCanvas": false,
+      "bodyTextLen": 4622,
+      "bodyTextHash": "e5fd4b63c1074132d95df5e9560639823c3362f736dbea80c27dcbe27ec67c06",
+      "bodyTextPrefix": "پرش به محتوا M مونا عبادی EN مدیر محصول ارشد در آی‌بیمه · خانواد",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
